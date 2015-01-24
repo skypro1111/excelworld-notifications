@@ -1,0 +1,30 @@
+﻿{
+    "manifest_version": 2, 
+    "name": "ExcelWorld notifications", 
+    "version": "1.3.2", 
+    "description": "Уведомления Мир Excel",
+    "icons": {
+    },
+    "permissions": ["notifications",
+         "http://www.excelworld.ru/forum"
+    ],
+    "browser_action": {
+        "default_title": "Уведомления Мир Excel",
+        "default_icon": "1.png",
+        "default_popup": "popup.html",
+        "scripts": ["popup.js", "jquery.js"]
+    },
+    "background": {
+        "scripts": ["back.js"]
+    },
+    "web_accessible_resources": ["1.png",   "http://www.excelworld.ru/forum/2", 
+                                            "http://www.excelworld.ru/forum/3",
+                                            "http://www.excelworld.ru/forum/4",
+                                            "http://www.excelworld.ru/forum/5",
+                                            "http://www.excelworld.ru/forum/6",
+                                            "http://www.excelworld.ru/forum/7",
+                                            "http://www.excelworld.ru/forum/10",
+                                            "http://www.excelworld.ru/forum/12",
+                                            "http://www.excelworld.ru/forum/13"]
+
+}
