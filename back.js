@@ -40,7 +40,7 @@ setInterval(function()
                                                         window.localStorage.setItem(urls, text);
                                                         urlsarr[urlsarr.length] = urls;
                                                     }else{ window.localStorage.setItem(urls, text); }   
-                                            }  
+                                            }  // 
                                     });
                             };
                     };
