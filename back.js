@@ -43,7 +43,7 @@ setInterval(function()
                             };
                     };
                     i++;
-                    if(i<1){request(i);};
+                    if(i<20){request(i);};
                 };
                 xmlhttp.send(null);
             };
