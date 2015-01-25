@@ -6,15 +6,26 @@ $(document).ready(function () {
     if(!window.localStorage.getItem('forumoptions')){
         var opt = 
             {
-                0 : {name: 'Вопросы по Excel', active: false, url : 'http://www.excelworld.ru/forum/2'},
-                1 : {name: 'Вопросы по VBA', active: false, url : 'http://www.excelworld.ru/forum/10'},
-                2 : {name: 'Excel и другие приложения', active: false, url : 'http://www.excelworld.ru/forum/4'},
-                3 : {name: 'Готовые решения', active: false, url : 'http://www.excelworld.ru/forum/3'},
-                4 : {name: 'Работа / Фриланс', active: false, url : 'http://www.excelworld.ru/forum/6'},
-                5 : {name: 'Неформальное общение', active: false, url : 'http://www.excelworld.ru/forum/5'},
-                6 : {name: 'Мозговой штурм', active: false, url : 'http://www.excelworld.ru/forum/7'},
-                7 : {name: 'Вопросы по работе форума и сайта', active: false, url : 'http://www.excelworld.ru/forum/12'},
-                8 : {name: 'Объявления администрации', active: false, url : 'http://www.excelworld.ru/forum/13'}
+                0 : {name: 'Вопросы по Excel' ,                 sub: false, active: false, url : 'http://www.excelworld.ru/forum/2'},
+                1 : {name: 'Вопросы по Excel для Mac' ,         sub: false, active: false, url : 'http://www.excelworld.ru/forum/14'},
+                2 : {name: 'Вопросы по VBA' ,                   sub: false, active: false, url : 'http://www.excelworld.ru/forum/10'},
+                3 : {name: 'Вопросы по VB, VB.net' ,            sub: false, active: false, url : 'http://www.excelworld.ru/forum/15'},
+                4 : {name: 'Excel и другие приложения' ,        sub: false, active: false, url : 'http://www.excelworld.ru/forum/4'},
+                5 : {name: 'Вопросы по Word' ,                  sub: false, active: false, url : 'http://www.excelworld.ru/forum/16'},
+                6 : {name: 'Вопросы по Access' ,                sub: false, active: false, url : 'http://www.excelworld.ru/forum/17'},
+                7 : {name: 'Вопросы по Power Point' ,           sub: false, active: false, url : 'http://www.excelworld.ru/forum/18'},
+                8 : {name: 'Вопросы по Outlook' ,               sub: false, active: false, url : 'http://www.excelworld.ru/forum/19'},
+                9 : {name: 'Вопросы по Visio' ,                 sub: false, active: false, url : 'http://www.excelworld.ru/forum/20'},
+                10 : {name: 'Вопросы по Share Point' ,          sub: false, active: false, url : 'http://www.excelworld.ru/forum/21'},
+                11 : {name: 'Вопросы по Open Office' ,          sub: false, active: false, url : 'http://www.excelworld.ru/forum/22'},
+                12 : {name: 'Вопросы по Google Docs' ,          sub: false, active: false, url : 'http://www.excelworld.ru/forum/23'},
+                13 : {name: 'Вопросы по 1С' ,                   sub: false, active: false, url : 'http://www.excelworld.ru/forum/24'},
+                14 : {name: 'Готовые решения' ,                 sub: false, active: false, url : 'http://www.excelworld.ru/forum/3'},
+                15 : {name: 'Работа / Фриланс' ,                sub: false, active: false, url : 'http://www.excelworld.ru/forum/6'},
+                16 : {name: 'Неформальное общение' ,            sub: false, active: false, url : 'http://www.excelworld.ru/forum/5'},
+                17 : {name: 'Мозговой штурм' ,                  sub: false, active: false, url : 'http://www.excelworld.ru/forum/7'},
+                18 : {name: 'Вопросы по работе форума и сайта' ,sub: false, active: false, url : 'http://www.excelworld.ru/forum/12'},
+                19 : {name: 'Объявления администрации' ,        sub: false, active: false, url : 'http://www.excelworld.ru/forum/13'},
             };
         window.localStorage.setItem('forumoptions', JSON.stringify(opt));
     };
